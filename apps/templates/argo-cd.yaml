@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-cd
+  namespace: devops-argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: devops-argocd
+  project: default
+  source:
+    path: argo-cd/
+    repoURL: http://ec2-54-209-222-75.compute-1.amazonaws.com:8080/gitlab-instance-a3df9ff3/charts.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
