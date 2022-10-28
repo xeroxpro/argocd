@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     path: argo-cd/
-    repoURL: http://ec2-54-209-222-75.compute-1.amazonaws.com:8080/gitlab-instance-a3df9ff3/charts.git
+    repoURL: https://github.com/xeroxpro/argocd
     targetRevision: HEAD
   syncPolicy:
     automated:
