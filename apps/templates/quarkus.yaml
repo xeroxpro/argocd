@@ -11,7 +11,7 @@ spec:
   project: charts
   source:
     path: quarkus-subchart/
-    repoURL: http://ec2-54-209-222-75.compute-1.amazonaws.com:8080/gitlab-instance-a3df9ff3/charts.git
+    repoURL: https://github.com/xeroxpro/argocd.git
     targetRevision: HEAD
   sync:
     comparedTo:
@@ -20,7 +20,7 @@ spec:
         server: https://kubernetes.default.svc
       source:
         path: quarkus-subchart/
-        repoURL: http://ec2-54-209-222-75.compute-1.amazonaws.com:8080/gitlab-instance-a3df9ff3/charts.git
+        repoURL: https://github.com/xeroxpro/argocd.git
         targetRevision: HEAD
   syncPolicy:
     automated:
