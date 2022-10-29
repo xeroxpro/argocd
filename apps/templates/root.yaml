@@ -7,7 +7,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: devops-argocd
+    namespace: argocd-devops
   project: default
   source:
     path: apps/
