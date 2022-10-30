@@ -7,9 +7,9 @@ spec:
     namespace: argocd-devops
     server: https://7D9E2FE5D80408CD05E1AAB698FC3D77.gr7.us-east-1.eks.amazonaws.com
   project: default
-    path: charts/guestbook/
-    repoURL: https://github.com/xeroxpro/argocd
-    targetRevision: master
+    path: charts/guestbook
+      repoURL: https://github.com/xeroxpro/argocd
+        targetRevision: master
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
