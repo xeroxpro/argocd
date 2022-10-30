@@ -1,7 +1,4 @@
 apiVersion: v2
 name: root
 version: 1.0.0
-spec:
-  source:
-    helm:
-      version: v3
+
