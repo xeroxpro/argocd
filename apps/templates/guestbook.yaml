@@ -10,7 +10,7 @@ spec:
   source:
     path: charts/guestbook
     repoURL: https://github.com/xeroxpro/argocd.git
-    targetRevision: main
+    targetRevision: HEAD
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
