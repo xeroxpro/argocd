@@ -10,6 +10,8 @@ spec:
     namespace: argocd-devops
   project: default
   source:
+    helm:
+     version: v3
     path: apps/
     repoURL: https://github.com/xeroxpro/argocd.git
     targetRevision: HEAD
