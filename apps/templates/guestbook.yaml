@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: charts/guestbook
-    repoURL: https://github.com/xeroxpro/argocd
+    repoURL: https://github.com/xeroxpro/argocd.git
     targetRevision: main
   syncPolicy:
     syncOptions:
