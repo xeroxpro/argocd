@@ -6,10 +6,10 @@ metadata:
 spec: 
   destination: 
     namespace: argocd-devops
-    server: "https://7D9E2FE5D80408CD05E1AAB698FC3D77.gr7.us-east-1.eks.amazonaws.com"
+    server: https://7D9E2FE5D80408CD05E1AAB698FC3D77.gr7.us-east-1.eks.amazonaws.com
   project: default
     path: charts/guestbook
-    repoURL: "https://github.com/xeroxpro/argocd"
+    repoURL: https://github.com/xeroxpro/argocd
     targetRevision: main
   syncPolicy:
     syncOptions:
