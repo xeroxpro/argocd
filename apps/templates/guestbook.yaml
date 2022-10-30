@@ -8,7 +8,9 @@ spec:
     namespace: argocd-devops
     server: "server: https://7D9E2FE5D80408CD05E1AAB698FC3D77.gr7.us-east-1.eks.amazonaws.com"
   project: default
-  source: 
+  source:
+    helm:
+     version: v3 
     path: charts/guestbook
     repoURL: "https://github.com/xeroxpro/argocd"
     targetRevision: main
